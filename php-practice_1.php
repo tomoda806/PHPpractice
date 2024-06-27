@@ -2,8 +2,7 @@
 // Q1 変数と文字列
 $name = '友田';
 
-$myname = '私の名前は「' . $name . '」です。';
-var_dump($myname);
+echo '私の名前は「' . $name . '」です。';
 
 // Q2 四則演算
 $x = 5;
@@ -13,10 +12,8 @@ var_dump($num);
 var_dump($num / 2);
 
 // Q3 日付操作
-$timezone = new DateTimeZone('Asia/Tokyo');
-$now = new DateTime('now', $timezone);
-$time = '現在時刻は、' . $now->format('Y年m月d日 H時i分s秒') . 'です。';
-var_dump($time);
+$now = date('Y年m月d日 H時i分s秒');
+echo '現在時刻は、' . $now . 'です。';
 
 // Q4 条件分岐-1 if文
 $$device = 'windows';
@@ -33,7 +30,7 @@ echo $message;
 
 // Q6 配列
 $kanto = ['東京都', '茨城県', '群馬県', '栃木県', '千葉県','埼玉県' , '神奈川県'];
-echo $kanto[3] . 'と' . $kanto[4] . 'は関東地方の都道府県です。';
+echo $kanto[2] . 'と' . $kanto[3] . 'は関東地方の都道府県です。';
 
 // Q7 連想配列-1
 $array = [
@@ -46,18 +43,18 @@ $array = [
   '茨城県'=>'水戸市'
 ];
 foreach ($array as $value) {
-echo "$value \n";
+  echo "$value \n";
 }
 
 // Q8 連想配列-2
 $array = [
-  '東京都'=>'新宿区',
-  '神奈川県'=>'横浜市',
-  '千葉県'=>'千葉市',
-  '埼玉県'=>'さいたま市',
-  '栃木県'=>'宇都宮市',
-  '群馬県'=>'前橋市',
-  '茨城県'=>'水戸市'
+  '東京都' => '新宿区',
+  '神奈川県' => '横浜市',
+  '千葉県' => '千葉市',
+  '埼玉県' => 'さいたま市',
+  '栃木県' => '宇都宮市',
+  '群馬県' => '前橋市',
+  '茨城県' => '水戸市'
 ];
 $key= '埼玉県';
 foreach ($array as $key => $value){

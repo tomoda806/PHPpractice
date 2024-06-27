@@ -32,11 +32,7 @@ $personalInfos = [
   ],
 ];
 // 問1
-<<<<<<< HEAD
 echo $personalInfos[1]['name'] . 'の電話番号は' . $personalInfos[1]['tel'] . 'です。';
-=======
-echo $personalInfos[1][0] . 'の電話番号は' . $personalInfos[1][2] . 'です。';
->>>>>>> 8b9c8b13eba203157e448e62cd75d736d8307b0e
 
 // 問2
 foreach ($personalInfos as $num => $value) {
@@ -47,15 +43,10 @@ foreach ($personalInfos as $num => $value) {
 
 // 問3
 $ageList = [25, 30, 18];
-<<<<<<< HEAD
 //foreach ($personalInfos as $num => $value) {
 //  $personalInfos[$num]['age'] = $ageList[$num];
 foreach ($ageList as $num => $value) {
   $personalInfos[$num]['age'] = $value;
-=======
-foreach ($personalInfos as $num => $value) {
-  $personalInfos[$num]['age'] = $ageList[$num];
->>>>>>> 8b9c8b13eba203157e448e62cd75d736d8307b0e
 }
 var_dump($personalInfos);
 
@@ -104,25 +95,14 @@ $yamada->attend('PHP');
 // Q5 定義済みクラス
 //問1
 $date = new DateTime();
-<<<<<<< HEAD
 //$date->modify('-1 month');
 //echo $date->format('Y-m-d');
 echo $date->modify('-1 month') -> format('Y-m-d');
-=======
-$date->modify('-1 month');
-echo $date->format('Y-m-d');
->>>>>>> 8b9c8b13eba203157e448e62cd75d736d8307b0e
 
 //問2
 $today = new DateTime('now');
 $day = new DateTime('1992-04-25');
-<<<<<<< HEAD
 //$diff = $day->diff($today);
 //echo $diff->format('あの日から%a日経過しました。');
 echo $day -> diff($today) -> format('あの日から%a日経過しました。');
-=======
-$diff = $day->diff($today);
-echo $diff->format('あの日から%a日経過しました。');
-
->>>>>>> 8b9c8b13eba203157e448e62cd75d736d8307b0e
 ?>

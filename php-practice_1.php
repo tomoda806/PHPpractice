@@ -102,10 +102,12 @@ echo($greeting2);
 
 // Q11 関数-2
 function calcTaxInPrice($price) {
-  return $price . '円の商品の税込価格は' . $price * 1.1 . '円です。';
+  // return $price . '円の商品の税込価格は' . $price * 1.1 . '円です。';
+  return $price * 1.1;
 }
-$taxInPrice = calcTaxInPrice(100);
-echo($taxInPrice);
+$price = 1000;
+$taxInPrice = calcTaxInPrice($price);
+echo $price . '円の商品の税込価格は' . $taxInPrice . '円です。';
 
 // Q12 関数とif文
 function distinguishNum($num) {
@@ -130,21 +132,23 @@ echo($anynum2);
 // Q13 関数とswitch文
 function evaluateGrade($str) {
   switch($str)  {
-    case $str === 'A' || $str === 'B':
+    case 'A':
+    case 'B':
       // echo '合格です。';
       return '合格です。';
       break;
-    case $str === 'C':
+    case 'C':
       // echo '合格ですが追加課題があります。';
       return '合格ですが追加課題があります。';
       break;
-    case $str === 'D':
+    case 'D':
       // echo '不合格です。';
       return '不合格です。';
       break;
     default:
       // echo '判定不明です。講師に問い合わせてください。';
       return '判定不明です。講師に問い合わせてください。';
+      break;
   }
   // echo "\n";
 }

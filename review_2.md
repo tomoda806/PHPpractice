@@ -56,4 +56,4 @@ $prev = new DateTime('2000-1-1');
 echo $prev->diff($now)->format('%a')
 ```
 
-- マニュアル内の検索欄から「DateTime」と入力しClasses欄のDateTimeを選択。クラス概要のメソッド一覧からdiffを選択すると、出力例などが記載されている。diffの参考欄からDateInterval::formatを選択すると、formatについて記載がある。
+- まずDateTimeクラスがインスタンス化して使用されている為、マニュアル内の検索欄から「DateTime」と入力しClasses欄のDateTimeを選択。クラス概要のメソッド一覧からdiffを選択すると、出力例などが記載されている。diffの参考欄からDateInterval::formatを選択すると、formatについて記載がある。

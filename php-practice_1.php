@@ -60,7 +60,7 @@ $key= '埼玉県';
 foreach ($array as $key => $value){
   if($key === '埼玉県'){
     echo $key . 'の県庁所在地は,'. $value .'です。';
-    return;
+    break;
   }
 }
 // Q9 連想配列-3
